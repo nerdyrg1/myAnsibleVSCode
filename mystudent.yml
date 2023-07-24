@@ -1,0 +1,20 @@
+---
+- myStudents:
+  - name: anil
+    phno: 5455656656
+    address:
+      street: sdgsdj
+      houseno: sdfs
+  
+  - name: sunil
+    phno: 464464646
+    address:
+      street: uooio
+      houseno: qwohwoq
+  
+  - name: venil
+    phno: 789799799
+    address:
+      street: 49797w
+      houseno: sdswq
+      

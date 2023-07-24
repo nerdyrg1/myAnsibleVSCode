@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  #apt-get install git
+  - name: i want to install git on ansible nodes
+    apt:
+      name: git
+      state: present 
+
+  #apt-get install wget
+  - name: i want to install wget on ansible nodes
+    apt:
+      name: wget
+      state: present
+
