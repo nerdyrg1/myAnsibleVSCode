@@ -5,7 +5,7 @@
   - name: install webserver on ubuntu nodes
     apt:
       name: "{{mywebpackonubuntu}}"
-      state: absent
+      state: present
     when: ansible_os_family == "Debian"
   
   - name: start webserver on ubuntu nodes
