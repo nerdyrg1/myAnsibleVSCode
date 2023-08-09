@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: create ansible nodes
+    key_name: ssh_pem_Ohio
+    instance_type: t2.micro
+    image: ami-0fefd9075fe63b87c
+    wait: yes
+    group: launch-wizard-1
+    count: 2
+    vpc_subnet_id: subnet-010ae47b26d4d43d8
+    assign_public_ip: yes
+    region: us-east-2
+    instance_tags:
+        Name: AnsibleNodes
