@@ -1,0 +1,6 @@
+---
+- name: deploy java app
+  get_url:
+    url: https://mys3tomcatbucket.s3.us-east-2.amazonaws.com/sample.war
+    dest: /opt/tomcat/webapps/sample.war
+    force_basic_auth: yes
