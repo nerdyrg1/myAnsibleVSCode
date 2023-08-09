@@ -1,0 +1,16 @@
+---
+- name: create a tomcat user
+  user:
+    name: tomcat
+    shell: /bin/false
+    home: /opt/tomcat
+    state: present
+
+- name: update packages
+  apt:
+    update_cache: yes
+
+- name: install java
+  apt:
+    name: default-jdk
+    state: present
